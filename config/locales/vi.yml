@@ -1,0 +1,30 @@
+vi:
+  base_title: Ứng dụng mẫu của sách Ruby on Rails Tutorial
+  static_pages:
+    home:
+      title: Trang chủ
+      header: Ứng dụng mẫu
+      content1: Đây là trang chủ của
+      content2: ví dụ mẫu.
+      link1: sách hướng dẫn Ruby on rails
+
+    about:
+      title: Tổng quan
+      content1: Tuyển tập
+      content2: này là một
+      content3: kết hợp với
+      content4: nhằm hướng dẫn cách phát triển web trên
+      content5: . Đây là một trang web mẫu của tuyển tập hướng dẫn.
+      link1: hướng dẫn Ruby on Rails
+      link2: cuốn sách
+      link3: một chuỗi các hình ảnh màn hình
+      link4: Ruby on Rails
+
+    help:
+      title: Trợ Giúp
+      content1: Tìm trợ giúp giải quyết các vấn đề với Ruby on Rails trên
+      content2: . Để tìm trợ giúp với trang web mẫu này, hãy đọc
+      content3: sách.
+      link1: mục trợ giúp của Rails Tutorial
+      link2: Ruby on Rails Tutorial
+

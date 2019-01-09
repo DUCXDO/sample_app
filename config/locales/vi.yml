@@ -138,6 +138,7 @@ vi:
       sign_up_n:  Đăng ký ngay!
       login: Đăng nhập
       remember: Ghi nhớ tài khoản trên máy tính này
+      forgot_pass: (quên mật khẩu)
 
     create:
       wrong: Sai tên tài khoản hoặc mật khẩu!
@@ -169,10 +170,37 @@ vi:
       hi: Chào
       sample_app: Ứng dụng mẫu
       activate: Kích hoạt
-      mail_subject: Kích hoạt tài khoản
+      activate_mail_subject: Kích hoạt tài khoản
+
+    password_reset:
+      content1: "Để đặt lại mật khẩu hãy ấn link bên dưới: "
+      content2: Đường dẫn này sẽ hết hạn sau 2h.
+      content3: Nếu bạn không yêu cầu đổi mật khẩu, hãy bỏ qua mail này và mật khẩu của bạn sẽ được giữ nguyên.
+      title: Đặt lại mật khẩu
+      reset_password: Đặt lại mật khẩu
+      pass_reset_mail_subject: Đặt lại mật khẩu
 
   account_activations:
     edit:
       acc_activated: Tài khoản đã được kích hoạt!
       activation_link_invalid: Link kích hoạt không hợp lệ!
 
+  password_resets:
+    new:
+      title: Quên mật khẩu
+      submit: Đổi mật khẩu
+      email: Địa chỉ mail
+
+    create:
+      email_not_found: Không tìm thấy địa chỉ mail
+      email_reset_send: Đã gửi mail hướng dẫn đổi mật khẩu
+
+    edit:
+      reset_password: Đặt lại mật khẩu
+      confirmation: Xác nhận
+      update_password: Cập nhật mật khẩu
+
+    update:
+      not_empty: không được để trống!
+      reset_succesful: Mật khẩu đã được cập nhật!
+      expired: Link đổi mật khẩu đã hết hạn!

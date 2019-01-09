@@ -80,3 +80,17 @@ en:
       title: Sign up
       header: Sign up
       content: This will be a signup page for new users.
+      name: Name
+      password: Password
+      email: Email
+      confirmation: Confirmation
+      create: Create my account
+      fail: Failed to create new account!
+
+    create:
+      welcome: Welcome to the Sample App!
+
+  shared:
+    error_messages:
+      error1: The form contains
+      error2: error

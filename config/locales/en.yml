@@ -109,6 +109,7 @@ en:
       new_user: New user?
       sign_up_n:  Sign up now!
       login: Log in
+      remember: Remember me on this computer
 
     create:
       wrong: Invalid email/password combination!

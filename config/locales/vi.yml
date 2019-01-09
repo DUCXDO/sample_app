@@ -78,5 +78,7 @@ vi:
       new_user: Người dùng mới?
       sign_up_n:  Đăng ký ngay!
       login: Đăng nhập
+      remember: Ghi nhớ tài khoản trên máy tính này
+
     create:
       wrong: Sai tên tài khoản hoặc mật khẩu!

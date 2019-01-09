@@ -31,6 +31,15 @@
 
 en:
   base_title: Ruby on Rails Tutorial Sample App
+  sample_app: sample app
+  menu_home: Home
+  menu_help: Help
+  menu_about: About
+  menu_login: Log in
+  menu_news: News
+  footer_content1: The
+  footer_content2: by
+
   static_pages:
     home:
       title: Home
@@ -38,6 +47,10 @@ en:
       content1: This is the home page for the
       content2: sample application.
       link1: Ruby on rails tutorial
+      sign_up: Sign up now!
+      v2_content1: Welcome to the Sample App
+      v2_content2: This is the home page for the
+      v2_content3: sample application.
 
     about:
       title: About
@@ -59,3 +72,8 @@ en:
       link1: Rails Tutorial help section
       link2: Ruby on Rails Tutorial
 
+  users:
+    new:
+      title: Sign up
+      header: Sign up
+      content: This will be a signup page for new users.

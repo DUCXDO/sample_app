@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+  <%= javascript_include_tag "i18n" %>
+  <%= javascript_include_tag "translations", skip_pipeline: true %>
   <head>
     <title><%= full_title yield :title %> </title>
     <%= render "layouts/head" %>

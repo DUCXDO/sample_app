@@ -5,13 +5,16 @@ ruby "2.5.3"
 gem "bcrypt", "3.1.12"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap-kaminari-views"
+gem "carrierwave", "1.2.2"
 gem "coffee-rails", "~> 4.2"
 gem "config", "~> 1.7", ">= 1.7.1"
 gem "faker", "1.7.3"
 gem "figaro"
+gem "i18n-js"
 gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
 gem "kaminari"
+gem "mini_magick", "4.7.0"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.2"
 gem "rails-i18n"
@@ -27,4 +30,7 @@ group :development do
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console", ">= 3.3.0"
+end
+group :production do
+  gem "fog", "1.42"
 end

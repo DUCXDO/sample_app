@@ -29,6 +29,7 @@ vi:
       v2_content1: Chào mừng tới ứng dụng mẫu
       v2_content2: Đây là trang chủ của
       v2_content3: ví dụ mẫu.
+      micropost_feed: Bài đăng
 
     about:
       title: Tổng quan
@@ -95,38 +96,26 @@ vi:
 
     show:
       user_not_found: Không tìm thấy người dùng!
-
-    edit:
-      title: Sửa thông tin
-      header: Cập nhật thông tin tài khoản
-      content: Đây sẽ là trang đăng ký cho người dùng mới.
-      name: Họ và Tên
-      password: Mật khẩu
-      email: Địa chỉ mail
-      confirmation: Nhập lại mật khẩu
-      save: Lưu thay đổi
-      change: Đổi ảnh
-      re_login: Hãy đăng nhập!
-
-    update:
-      success: Thông tin tài khoản đã được cập nhật
-      edit_fail: Cập nhật thông tin tài khoản thất bại!
-
-    index:
-      title: Tất cả người dùng
-      header: Tất cả người dùng
-
-    user:
-      delete: Xóa
-      sure: Bạn có chắc không?
-
-    destroy:
-      user_deleted: Người dùng đã bị xóa!
+      microposts: Bài viết
 
   shared:
     error_messages:
       error1: Thông tin nhập có
       error2: lỗi
+
+    micropost_form:
+      comment: Nhập nội dung bài viết...
+      post: Đăng bài
+
+    user_info:
+      my_profile: Thăm trang cá nhân của tôi
+      micropost: " bài viết"
+
+    user_form:
+      name: Họ và Tên
+      password: Mật khẩu
+      email: Địa chỉ mail
+      confirmation: Nhập lại mật khẩu
 
   sessions:
     new:
@@ -204,3 +193,20 @@ vi:
       not_empty: không được để trống!
       reset_succesful: Mật khẩu đã được cập nhật!
       expired: Link đổi mật khẩu đã hết hạn!
+
+  microposts:
+    micropost:
+      posted: Đăng
+      ago: trước.
+      delete: Xóa
+      sure: Bạn chắc chưa?
+
+    destroy:
+      deleted: Bài viết đã bị xóa!
+
+    create:
+      post_created: Bài viết đã được đăng!
+
+  errors:
+    messages:
+      extension_whitelist_error: phải nhỏ hơn 5MB

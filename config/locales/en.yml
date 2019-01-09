@@ -37,8 +37,11 @@ en:
   menu_about: About
   menu_login: Log in
   menu_news: News
-  footer_content1: The
-  footer_content2: by
+
+  layouts:
+    footer:
+      content1: The
+      content2: by
 
   static_pages:
     home:

@@ -95,6 +95,37 @@ en:
     create:
       welcome: Welcome to the Sample App!
       fail: Failed to create new account!
+      remind_check_email: Please check your email to activate your account!
+
+    edit:
+      title: Edit user
+      header: Update your profile
+      content: This will be a signup page for new users.
+      name: Name
+      password: Password
+      email: Email
+      confirmation: Confirmation
+      save: Save changes
+      change: Change
+      re_login: Please log in!
+
+    update:
+      success: Profile updated
+      edit_fail: Fail to update profile!
+
+    index:
+      title: All users
+      header: All users
+
+    destroy:
+      user_deleted: User deleted!
+
+    user:
+      delete: Delete
+      sure: Are you sure?
+
+    show:
+      user_not_found: User not found!
 
     edit:
       title: Edit user
@@ -142,6 +173,7 @@ en:
     create:
       wrong: Invalid email/password combination!
       success_login: Login was successfully!
+      message: Account not activated. Check your email for the activation link.
 
   views:
     pagination:
@@ -161,3 +193,17 @@ en:
 
       more_pages:
         display_entries: "Displaying %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> of <b>%{total}</b> in total"
+
+  user_mailer:
+    account_activation:
+      content1: "Welcome to the Sample App! Click on the link below to activate your account:"
+      hi: Hi
+      sample_app: Sample app
+      activate: Activate
+      mail_subject: Account activation
+
+  account_activations:
+    edit:
+      acc_activated: Account activated!
+      activation_link_invalid: Invalid activation link!
+

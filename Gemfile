@@ -8,6 +8,7 @@ gem "bootstrap-kaminari-views"
 gem "coffee-rails", "~> 4.2"
 gem "config", "~> 1.7", ">= 1.7.1"
 gem "faker", "1.7.3"
+gem "figaro"
 gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
 gem "kaminari"
@@ -27,4 +28,3 @@ group :development do
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console", ">= 3.3.0"
 end
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]

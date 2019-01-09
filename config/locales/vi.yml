@@ -11,6 +11,7 @@ vi:
   menu_setting: Cài đặt
   menu_user: Người dùng
   menu_account: Tài khoản
+  user_not_found: Không tìm thấy người dùng!
 
   layouts:
     footer:
@@ -64,6 +65,33 @@ vi:
       welcome: Chào mừng tới Ứng dụng mẫu!
       fail: Tạo tài khoản mới thất bại!
 
+    edit:
+      title: Sửa thông tin
+      header: Cập nhật thông tin tài khoản
+      content: Đây sẽ là trang đăng ký cho người dùng mới.
+      name: Họ và Tên
+      password: Mật khẩu
+      email: Địa chỉ mail
+      confirmation: Nhập lại mật khẩu
+      save: Lưu thay đổi
+      change: Đổi ảnh
+      re_login: Hãy đăng nhập!
+
+    update:
+      success: Thông tin tài khoản đã được cập nhật
+      edit_fail: Cập nhật thông tin tài khoản thất bại!
+
+    index:
+      title: Tất cả người dùng
+      header: Tất cả người dùng
+
+    user:
+      delete: Xóa
+      sure: Bạn có chắc không?
+
+    destroy:
+      user_deleted: Người dùng đã bị xóa!
+
   shared:
     error_messages:
       error1: Thông tin nhập có
@@ -82,3 +110,23 @@ vi:
 
     create:
       wrong: Sai tên tài khoản hoặc mật khẩu!
+      success_login: Đăng nhập thành công!
+
+  views:
+    pagination:
+      first: "&laquo; Đầu"
+      last: "Cuối &raquo;"
+      previous: "&lsaquo; Trước"
+      next: "Sau &rsaquo;"
+      truncate: "&hellip;"
+
+  helpers:
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "Không tìm thấy %{entry_name}"
+          one: "Đang hiển thị <b>1</b> %{entry_name}"
+          other: "Đang hiển thị <b>tất cả%{count}</b> %{entry_name}"
+
+      more_pages:
+        display_entries: "Đang hiển thị %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> trên tổng số <b>%{total}</b> trang"

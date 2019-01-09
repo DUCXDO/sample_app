@@ -1,10 +1,15 @@
 class UsersController < ApplicationController
-  def new
-    @user = User.new
+  before_action :search_user, only: %i(edit show update destroy)
+  before_action :logged_in_user, only: %i(index edit update destroy)
+  before_action :correct_user, only: %i(edit update)
+  before_action :admin_user, only: %i(destroy)
+
+  def index
+    @users = User.page(params[:page]).per Settings.page_limit
   end
 
-  def show
-    @user = User.find_by id: params[:id]
+  def new
+    @user = User.new
   end
 
   def create
@@ -12,16 +17,61 @@ class UsersController < ApplicationController
 
     if @user.save
       log_in @user
-      flash.now[:success] = t ".welcome"
+      flash[:success] = t ".welcome"
       redirect_to @user
     else
-      flash.now[:fail] = t ".fail"
+      flash.now[:danger] = t ".fail"
       render :new
     end
   end
 
+  def show; end
+
+  def edit; end
+
+  def update
+    if @user.update user_params
+      flash[:success] = t ".success"
+      redirect_to @user
+    else
+      flash.now[:danger] = t ".edit_fail"
+      render :edit
+    end
+  end
+
+  def destroy
+    @user.destroy
+    flash[:success] = t ".user_deleted"
+    redirect_to users_url
+  end
+
+  def correct_user
+    redirect_to root_url unless current_user.current_user? @user
+  end
+
+  def admin_user
+    redirect_to root_url unless current_user.admin?
+  end
+
+  def search_user
+    @user = User.find_by id: params[:id]
+
+    return if @user
+    flash[:danger] = t "user_not_found"
+    redirect_to home_path
+  end
+
+  private
+
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
+  end
+
+  def logged_in_user
+    return if logged_in?
+    store_location
+    flash[:danger] = t ".re_login"
+    redirect_to login_url
   end
 end

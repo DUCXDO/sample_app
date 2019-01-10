@@ -1,5 +1,14 @@
 vi:
   base_title: Ứng dụng mẫu của sách Ruby on Rails Tutorial
+  sample_app: ứng dụng mẫu
+  menu_home: Trang chủ
+  menu_help: Trợ giúp
+  menu_about: Giới thiệu
+  menu_login: Đăng nhập
+  menu_news: Tin tức
+  footer_content1: Sách
+  footer_content2: của
+
   static_pages:
     home:
       title: Trang chủ
@@ -7,6 +16,10 @@ vi:
       content1: Đây là trang chủ của
       content2: ví dụ mẫu.
       link1: sách hướng dẫn Ruby on rails
+      sign_up: Đăng ký ngay!
+      v2_content1: Chào mừng tới ứng dụng mẫu
+      v2_content2: Đây là trang chủ của
+      v2_content3: ví dụ mẫu.
 
     about:
       title: Tổng quan
@@ -28,3 +41,8 @@ vi:
       link1: mục trợ giúp của Rails Tutorial
       link2: Ruby on Rails Tutorial
 
+  users:
+    new:
+      title: Đăng ký
+      header: Đăng ký
+      content: Đây sẽ là trang đăng ký cho người dùng mới.

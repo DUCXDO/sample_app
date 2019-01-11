@@ -6,8 +6,11 @@ vi:
   menu_about: Giới thiệu
   menu_login: Đăng nhập
   menu_news: Tin tức
-  footer_content1: Sách
-  footer_content2: của
+
+  layouts:
+    footer:
+      content1: Sách
+      content2: của
 
   static_pages:
     home:

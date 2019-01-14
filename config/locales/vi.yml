@@ -49,3 +49,17 @@ vi:
       title: Đăng ký
       header: Đăng ký
       content: Đây sẽ là trang đăng ký cho người dùng mới.
+      name: Họ và Tên
+      password: Mật khẩu
+      email: Địa chỉ mail
+      confirmation: Nhập lại mật khẩu
+      create: Tạo tài khoản
+      fail: Tạo tài khoản mới thất bại!
+
+    create:
+      welcome: Chào mừng tới Ứng dụng mẫu!
+
+  shared:
+    error_messages:
+      error1: Thông tin nhập có
+      error2: lỗi

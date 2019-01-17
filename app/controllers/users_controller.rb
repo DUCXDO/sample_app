@@ -9,12 +9,12 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new user_params
-
     if @user.save
-      flash[:success] = t ".welcome"
+      log_in @user
+      flash.now[:success] = t ".welcome"
       redirect_to @user
     else
-      flash[:fail] = t ".fail"
+      flash.now[:fail] = t ".fail"
       render :new
     end
   end

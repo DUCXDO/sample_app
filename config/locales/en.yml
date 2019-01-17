@@ -37,6 +37,11 @@ en:
   menu_about: About
   menu_login: Log in
   menu_news: News
+  menu_logout: Log out
+  menu_profile: Profile
+  menu_setting: Settings
+  menu_user: Users
+  menu_account: Account
 
   layouts:
     footer:
@@ -85,12 +90,25 @@ en:
       email: Email
       confirmation: Confirmation
       create: Create my account
-      fail: Failed to create new account!
 
     create:
       welcome: Welcome to the Sample App!
+      fail: Failed to create new account!
 
   shared:
     error_messages:
       error1: The form contains
       error2: error
+
+  sessions:
+    new:
+      title: Log in
+      header: Log in
+      email: Email
+      password: Password
+      new_user: New user?
+      sign_up_n:  Sign up now!
+      login: Log in
+
+    create:
+      wrong: Invalid email/password combination!

@@ -6,6 +6,11 @@ vi:
   menu_about: Giới thiệu
   menu_login: Đăng nhập
   menu_news: Tin tức
+  menu_logout: Đăng xuất
+  menu_profile: Hồ sơ cá nhân
+  menu_setting: Cài đặt
+  menu_user: Người dùng
+  menu_account: Tài khoản
 
   layouts:
     footer:
@@ -54,12 +59,24 @@ vi:
       email: Địa chỉ mail
       confirmation: Nhập lại mật khẩu
       create: Tạo tài khoản
-      fail: Tạo tài khoản mới thất bại!
 
     create:
       welcome: Chào mừng tới Ứng dụng mẫu!
+      fail: Tạo tài khoản mới thất bại!
 
   shared:
     error_messages:
       error1: Thông tin nhập có
       error2: lỗi
+
+  sessions:
+    new:
+      title: Đăng nhập
+      header: Đăng nhập
+      email: Địa chỉ mail
+      password: Mật khẩu
+      new_user: Người dùng mới?
+      sign_up_n:  Đăng ký ngay!
+      login: Đăng nhập
+    create:
+      wrong: Sai tên tài khoản hoặc mật khẩu!

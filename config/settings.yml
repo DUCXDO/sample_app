@@ -1,4 +1,5 @@
-user_name_max: 50
+name_max: 50
 email_max: 255
 password_min: 6
 avatar_size: 80
+its_true: "1"

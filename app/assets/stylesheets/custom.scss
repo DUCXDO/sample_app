@@ -121,13 +121,11 @@ $gray-medium-light: #eaeaea;
 /* sidebar */
 
 aside {
-  section{
-    .user_info
-    {
+  section {
+    .user_info {
       margin-top: 20px;
     }
   }
-
   section {
     padding: 10px;
     margin-top: 20px;
@@ -188,4 +186,18 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
 }

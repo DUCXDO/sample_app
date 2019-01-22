@@ -42,6 +42,7 @@ en:
   menu_setting: Settings
   menu_user: Users
   menu_account: Account
+  user_not_found: User not found!
 
   layouts:
     footer:
@@ -95,6 +96,33 @@ en:
       welcome: Welcome to the Sample App!
       fail: Failed to create new account!
 
+    edit:
+      title: Edit user
+      header: Update your profile
+      content: This will be a signup page for new users.
+      name: Name
+      password: Password
+      email: Email
+      confirmation: Confirmation
+      save: Save changes
+      change: Change
+      re_login: Please log in!
+
+    update:
+      success: Profile updated
+      edit_fail: Fail to update profile!
+
+    index:
+      title: All users
+      header: All users
+
+    destroy:
+      user_deleted: User deleted!
+
+    user:
+      delete: Delete
+      sure: Are you sure?
+
   shared:
     error_messages:
       error1: The form contains
@@ -113,3 +141,23 @@ en:
 
     create:
       wrong: Invalid email/password combination!
+      success_login: Login was successfully!
+
+  views:
+    pagination:
+      first: "&laquo; First"
+      last: "Last &raquo;"
+      previous: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
+      truncate: "&hellip;"
+
+  helpers:
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "No %{entry_name} found"
+          one: "Displaying <b>1</b> %{entry_name}"
+          other: "Displaying <b>all %{count}</b> %{entry_name}"
+
+      more_pages:
+        display_entries: "Displaying %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> of <b>%{total}</b> in total"

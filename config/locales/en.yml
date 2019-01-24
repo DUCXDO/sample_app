@@ -1,34 +1,3 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
   base_title: Ruby on Rails Tutorial Sample App
   sample_app: sample app
@@ -169,6 +138,7 @@ en:
       sign_up_n:  Sign up now!
       login: Log in
       remember: Remember me on this computer
+      forgot_pass: (forgot password)
 
     create:
       wrong: Invalid email/password combination!
@@ -200,10 +170,37 @@ en:
       hi: Hi
       sample_app: Sample app
       activate: Activate
-      mail_subject: Account activation
+      activate_mail_subject: Account activation
+
+    password_reset:
+      content1: "To reset your password click the link below: "
+      content2: This link will expire in two hours.
+      content3: If you did not request your password to be reset, please ignore this email and your password will stay as it is.
+      title: Password reset
+      reset_password: Reset password
+      pass_reset_mail_subject: Password reset
 
   account_activations:
     edit:
       acc_activated: Account activated!
       activation_link_invalid: Invalid activation link!
 
+  password_resets:
+    new:
+      title: Forgot password
+      submit: Submit
+      email: Email
+
+    create:
+      email_not_found: Email address not found
+      email_reset_send: Email sent with password reset instructions
+
+    edit:
+      reset_password: Reset password
+      confirmation: Confirmation
+      update_password: Update password
+
+    update:
+      not_empty: can't be empty
+      reset_succesful: Password has been reset.
+      expired: Password reset has expired.

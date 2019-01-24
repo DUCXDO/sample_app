@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by email: params[:session][:email].downcase
 
-    if user&.authenticate(params[:session][:password])
+    if user&.authenticate params[:session][:password]
       login_advance user
     else
       flash.now[:danger] = t ".wrong"
@@ -20,14 +20,19 @@ class SessionsController < ApplicationController
   private
 
   def login_advance user
-    log_in user
+    if user.activated?
+      log_in user
 
-    if params[:session][:remember_me] == Settings.its_true
-      remember user
+      if params[:session][:remember_me] == Settings.its_true
+        remember user
+      else
+        forget user
+      end
+      flash[:success] = t ".success_login"
+      redirect_back_or user
     else
-      forget user
+      flash[:warning] = t ".message"
+      redirect_to root_url
     end
-    flash[:success] = t ".success_login"
-    redirect_back_or user
   end
 end

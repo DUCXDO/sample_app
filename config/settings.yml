@@ -5,3 +5,7 @@ avatar_size: 50
 its_true: "1"
 page_limit: 20
 expired_time: 2
+post_cont_max: 140
+picture_max_size: 5
+picture_max_height: 400
+picture_max_width: 400

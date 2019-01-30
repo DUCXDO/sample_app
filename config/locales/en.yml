@@ -29,6 +29,7 @@ en:
       v2_content1: Welcome to the Sample App
       v2_content2: This is the home page for the
       v2_content3: sample application.
+      micropost_feed: Micropost Feed
 
     about:
       title: About
@@ -95,38 +96,26 @@ en:
 
     show:
       user_not_found: User not found!
-
-    edit:
-      title: Edit user
-      header: Update your profile
-      content: This will be a signup page for new users.
-      name: Name
-      password: Password
-      email: Email
-      confirmation: Confirmation
-      save: Save changes
-      change: Change
-      re_login: Please log in!
-
-    update:
-      success: Profile updated
-      edit_fail: Fail to update profile!
-
-    index:
-      title: All users
-      header: All users
-
-    destroy:
-      user_deleted: User deleted!
-
-    user:
-      delete: Delete
-      sure: Are you sure?
+      microposts: Microposts
 
   shared:
     error_messages:
       error1: The form contains
       error2: error
+
+    micropost_form:
+      comment: Compose new micropost...
+      post: Post
+
+    user_info:
+      my_profile: View my profile
+      micropost: " micropost"
+
+    user_form:
+      name: Name
+      password: Password
+      email: Email
+      confirmation: Confirmation
 
   sessions:
     new:
@@ -204,3 +193,20 @@ en:
       not_empty: can't be empty
       reset_succesful: Password has been reset.
       expired: Password reset has expired.
+
+  microposts:
+    micropost:
+      posted: Posted
+      ago: ago.
+      delete: Delete
+      sure: Are you sure?
+
+    destroy:
+      deleted: Micropost deleted!
+
+    create:
+      post_created: Micropost created!
+
+  errors:
+    messages:
+      extension_whitelist_error: should be less than 5MB

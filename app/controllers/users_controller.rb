@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  before_action :search_user, only: %i(edit show update destroy)
+  before_action :search_user, only: %i(edit show update destroy following
+   followers)
   before_action :logged_in_user, only: %i(index edit update destroy)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
@@ -26,6 +27,9 @@ class UsersController < ApplicationController
   end
 
   def show
+    @new_relationship = current_user.active_relationships.build
+    @update_relationship = current_user.active_relationships.
+      find_by followed_id: @user.id
     @microposts = @user.feed.page(params[:page]).per Settings.page_limit
   end
 
@@ -55,18 +59,18 @@ class UsersController < ApplicationController
     redirect_to root_url unless current_user.admin?
   end
 
+  private
+
+  def user_params
+    params.require(:user).permit :name, :email, :password,
+      :password_confirmation
+  end
+
   def search_user
     @user = User.find_by id: params[:id]
 
     return if @user
     flash[:danger] = t "user_not_found"
     redirect_to home_path
-  end
-
-  private
-
-  def user_params
-    params.require(:user).permit :name, :email, :password,
-      :password_confirmation
   end
 end

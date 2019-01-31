@@ -98,6 +98,16 @@ en:
       user_not_found: User not found!
       microposts: Microposts
 
+    show_follow:
+      show_profile: View my profile
+      microposts: "Microposts:"
+
+    follow:
+      follow: Follow
+
+    unfollow:
+      unfollow: Unfollow
+
   shared:
     error_messages:
       error1: The form contains
@@ -116,6 +126,10 @@ en:
       password: Password
       email: Email
       confirmation: Confirmation
+
+    stats:
+      following: following
+      followers: followers
 
   sessions:
     new:
@@ -210,3 +224,11 @@ en:
   errors:
     messages:
       extension_whitelist_error: should be less than 5MB
+
+  followers:
+    show:
+      followers_title: Followers
+
+  following:
+    show:
+      following_title: Following

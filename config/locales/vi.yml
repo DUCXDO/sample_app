@@ -98,6 +98,16 @@ vi:
       user_not_found: Không tìm thấy người dùng!
       microposts: Bài viết
 
+    show_follow:
+      show_profile: Xem trang cá nhân của tôi
+      microposts: "Số bài đăng:"
+
+    follow:
+      follow: Theo dõi
+
+    unfollow:
+      unfollow: Bỏ theo dõi
+
   shared:
     error_messages:
       error1: Thông tin nhập có
@@ -116,6 +126,10 @@ vi:
       password: Mật khẩu
       email: Địa chỉ mail
       confirmation: Nhập lại mật khẩu
+
+    stats:
+      following: người theo dõi bạn
+      followers: người bạn đang theo dõi
 
   sessions:
     new:
@@ -210,3 +224,11 @@ vi:
   errors:
     messages:
       extension_whitelist_error: phải nhỏ hơn 5MB
+
+  followers:
+    show:
+      followers_title: Những người đang theo dõi bạn
+
+  following:
+    show:
+      following_title: Những người bạn đang theo dõi
